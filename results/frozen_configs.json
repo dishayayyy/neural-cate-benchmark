@@ -1,0 +1,22 @@
+{
+  "neural": {
+    "DragonNet": {
+      "weight_decay": 0.03,
+      "rep_dim": 16
+    },
+    "TARNet": {
+      "weight_decay": 0.01,
+      "rep_dim": 16
+    }
+  },
+  "baselines": {
+    "CausalForestDML": {
+      "min_samples_leaf": 5,
+      "max_samples": 0.5
+    },
+    "T-learner": {
+      "min_samples_leaf": 3,
+      "max_features": 0.5
+    }
+  }
+}
