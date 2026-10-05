@@ -49,7 +49,7 @@ Our protocol uses IHDP replications 0--19 for all tuning, freezes every configur
 
 \subsection{Data}
 
-\textbf{IHDP.} We use the standard 100-replication version of the semi-synthetic IHDP benchmark \citep{hill2011bayesian,shalit2017estimating}. Each replication has 25 covariates, a binary treatment and a simulated outcome, and the potential-outcome means are available, so true individual effects are known. Each replication has 672 training units and 75 test units.
+\textbf{IHDP.} We use the standard 100-replication version of the semi-synthetic IHDP benchmark \citep{hill2011bayesian,shalit2017estimating}. The benchmark builds on the Infant Health and Development Program, an early-intervention trial for low-birth-weight premature infants \citep{brooksgunn1992effects}. Each replication has 25 covariates, a binary treatment and a simulated outcome, and the potential-outcome means are available, so true individual effects are known. Each replication has 672 training units and 75 test units.
 
 \textbf{Synthetic benchmark.} Covariates are $X\sim N(0,I_{10})$, treatment is $T\sim\mathrm{Bernoulli}(e(X))$ and $Y=\mu_0(X)+T\,\tau(X)+\varepsilon$ with $\varepsilon\sim N(0,1)$, where
 \begin{align}
